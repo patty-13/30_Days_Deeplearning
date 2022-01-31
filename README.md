@@ -32,16 +32,29 @@
 There are many type of Activation Functions that can be choosed to apply on your data. Refer this [link](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
      
   ![Activation Functions](https://miro.medium.com/max/1400/1*p_hyqAtyI8pbt2kEl6siOQ.png)</p>
-    <em><u>Hidden Layer </u> :- </em>
-   <p></p>
-   
-   
-        
-   Code - In Day1 Folder (TODO)
+    <em><u>Output Layer </u> :- </em>
+   <p>This is layer where we get our output for the Neural Network. We can have many outputs depending on the type of problem. For example we can get only a 
+  single node as output for a regression problem where as we can get a multiple numeber of outputs for example multiclass classification.</p>
+  
+  ![Multiclass Classification](https://developers.google.com/machine-learning/crash-course/images/SoftmaxLayer.svg)
+  
+  For more information refer this 
+   [Multiclass_Classification](https://developers.google.com/machine-learning/crash-course/multi-class-neural-networks/softmax) 
+
   
   Interview Questions 
-  
-    * What is 
+  1. Why should the activation function be differentiable ? [Answer](https://www.jeremyjordan.me/neural-networks-activation-functions/#:~:text=An%20ideal%20activation%20function%20is,training%20to%20optimize%20the%20weights.)
+  2. When should we use Linear Activation funciton or Non Linear activation function? [Answer](https://stackoverflow.com/questions/9782071/why-must-a-nonlinear-activation-function-be-used-in-a-backpropagation-neural-net)
+  3. How does the depth of neural network affects the neural network? [Answer](https://analyticsindiamag.com/depth-in-neural-networks/) 
+  4. What is Saturation of Activation Function/ What is vanishing Gradient ? [Answer](https://datascience.stackexchange.com/questions/44213/what-does-it-mean-for-an-activation-function-to-be-saturated-non-saturated), [Alt Answer](https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484)
+ 
+#### Reference
+  1. Developers Google 
+  2. Stack overflow
+  3. Towards data science
+  4. Wikipedia
+  5. Neural networks: activation functions Jeremy Jordan
+  6. Analytics India Mag
   
 ## Day 2 
   For Multi Layered Perceptron
