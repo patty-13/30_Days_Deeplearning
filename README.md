@@ -2,11 +2,11 @@
 
 
 
-
-
-
-
-
+## Day 1 
+  Multi Layered Perceptron 
+  Theory - ....
+  Code - In Day1 Folder (TODO)
+  Loss Function 
 
 
 
