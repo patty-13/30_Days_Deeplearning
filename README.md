@@ -64,7 +64,6 @@ There are many type of Activation Functions that can be choosed to apply on your
   <ul>
     <em>
       <li>MEAN SQUARED ERROR</li>
-      
       <li>MEAN SQAURED LOGRAITHMIC ERROR LOSS</li>
       <li>MEAN ABSOLUTE ERROR LOSS</li>
   </em>
