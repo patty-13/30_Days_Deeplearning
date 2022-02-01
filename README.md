@@ -90,13 +90,21 @@ There are many type of Activation Functions that can be choosed to apply on your
       <li>MINI BATCH GRADIENT DESCENT</li>
       <li>MOMENTUM</li>
       <li>NESTEROV ACCELERATED GRADIENT</li>
+  </em>
+  </ul>
+      
+   ![optimizer](https://user-images.githubusercontent.com/56751154/151979849-03535af1-0a18-42a8-a177-e4926edd1684.jpg)
+      
+   <ul>
+     <em>
       <li>ADAGRAD</li>
       <li>ADADELTA</li>
       <li>ADAM</li>
       <li>RMSPROP</li>
   </em>
   </ul>
-  ![optimizer](https://user-images.githubusercontent.com/56751154/151979849-03535af1-0a18-42a8-a177-e4926edd1684.jpg)
+  
+  
 
   
   
