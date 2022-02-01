@@ -60,7 +60,13 @@ There are many type of Activation Functions that can be choosed to apply on your
   For Multi Layered Perceptron<br>
   <p>Neural Network uses optimizer to minimize the error in the algorithm and the error is actually computed is by using a         Loss Function which helps in identify how good or bad the model is performing.</p>
 1. Loss Function <br> 
-1.1 Regression Loss Function
+    Loss functions measure how far an estimated value is from its true value. We need to know how closely we are estimating our values, this can be done using a loss function that gives us a measure of it. Ideally, we aim to decrease the loss and reach close to our true values.
+ 
+ For more information refer this [link](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#:~:text=Loss%20functions%20measure%20how%20far,the%20goal%20to%20be%20met.) 
+   
+   There are different loss for different task, Below are mentioned the loss according to task
+
+1.1 [Regression Loss Function](https://keras.io/api/losses/regression_losses/)
   <ul>
     <em>
       <li>MEAN SQUARED ERROR</li>
@@ -68,14 +74,16 @@ There are many type of Activation Functions that can be choosed to apply on your
       <li>MEAN ABSOLUTE ERROR LOSS</li>
   </em>
   </ul>
-1.2 Binary Classification Loss Function
+  
+1.2  [Binary Classification Loss Function](https://www.analyticsvidhya.com/blog/2021/03/binary-cross-entropy-log-loss-for-binary-classification/)
   <ul>
     <em>
       <li>BINARY CROSS ENTROPY</li>
       <li>HINGE LOSS</li>
   </em>
   </ul>
-1.3 Multi-Class Classification loss function
+  
+1.3  [Multi-Class Classification loss function]()
   <ul>
     <em>
       <li>CATEGORICAL CROSS ENTROPY LOSS</li>
@@ -92,7 +100,7 @@ There are many type of Activation Functions that can be choosed to apply on your
       <li>NESTEROV ACCELERATED GRADIENT</li>
   </em>
   </ul>
-      
+  
    ![optimizer](https://user-images.githubusercontent.com/56751154/151979849-03535af1-0a18-42a8-a177-e4926edd1684.jpg)
       
    <ul>
