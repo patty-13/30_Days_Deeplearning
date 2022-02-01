@@ -57,9 +57,47 @@ There are many type of Activation Functions that can be choosed to apply on your
   6. Analytics India Mag
   
 ## Day 2 
-  For Multi Layered Perceptron
-  Loss Function -
-  Optimization
+  For Multi Layered Perceptron<br>
+  <p>Neural Network uses optimizer to minimize the error in the algorithm and the error is actually computed is by using a         Loss Function which helps in identify how good or bad the model is performing.</p>
+1. Loss Function <br> 
+1.1 Regression Loss Function
+  <ul>
+    <em>
+      <li>MEAN SQUARED ERROR</li>
+      
+      <li>MEAN SQAURED LOGRAITHMIC ERROR LOSS</li>
+      <li>MEAN ABSOLUTE ERROR LOSS</li>
+  </em>
+  </ul>
+1.2 Binary Classification Loss Function
+  <ul>
+    <em>
+      <li>BINARY CROSS ENTROPY</li>
+      <li>HINGE LOSS</li>
+  </em>
+  </ul>
+1.3 Multi-Class Classification loss function
+  <ul>
+    <em>
+      <li>CATEGORICAL CROSS ENTROPY LOSS</li>
+      <li>KULLBACK LEIBLER DIVERGENCE LOSS</li>
+  </em>
+  </ul>
+2. Optimization
+  <ul>
+    <em>
+      <li>GRADIENT DESCENT</li>
+      <li>STOCHASTIC GRADIENT DESCENT</li>
+      <li>MINI BATCH GRADIENT DESCENT</li>
+      <li>MOMENTUM</li>
+      <li>NESTEROV ACCELERATED GRADIENT</li>
+      <li>ADAGRAD</li>
+      <li>ADADELTA</li>
+      <li>ADAM</li>
+      <li>RMSPROP</li>
+  </em>
+  </ul>
+  
   
 ## Day 3 
    Code - For multi Layered Perceptron
