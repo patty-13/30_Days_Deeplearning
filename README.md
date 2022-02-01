@@ -65,6 +65,7 @@ There are many type of Activation Functions that can be choosed to apply on your
  For more information refer this [link](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#:~:text=Loss%20functions%20measure%20how%20far,the%20goal%20to%20be%20met.) 
    
    There are different loss for different task, Below are mentioned the loss according to task
+  
 
 1.1 [Regression Loss Function](https://keras.io/api/losses/regression_losses/)
   <ul>
@@ -75,6 +76,8 @@ There are many type of Activation Functions that can be choosed to apply on your
   </em>
   </ul>
   
+  ![IMAGE](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/mean-squared-error.PNG)
+  
 1.2  [Binary Classification Loss Function](https://www.analyticsvidhya.com/blog/2021/03/binary-cross-entropy-log-loss-for-binary-classification/)
   <ul>
     <em>
@@ -83,14 +86,23 @@ There are many type of Activation Functions that can be choosed to apply on your
   </em>
   </ul>
   
-1.3  [Multi-Class Classification loss function]()
+ ![IMAGE](https://chris-said.io/assets/2020_cross_entropy/cross-entropy.png)
+
+  
+1.3  [Multi-Class Classification loss function](https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451)
   <ul>
     <em>
       <li>CATEGORICAL CROSS ENTROPY LOSS</li>
       <li>KULLBACK LEIBLER DIVERGENCE LOSS</li>
   </em>
   </ul>
+  
+ ![IMAGE](http://image.sciencenet.cn/home/201806/13/212841ifa4wdrfgb4awac7.png)
+ 
+
 2. Optimization
+ 
+   We will talk more about Optimization with specific codes for specific Optimizations also with techniques such as dropout.
   <ul>
     <em>
       <li>GRADIENT DESCENT</li>
@@ -112,9 +124,17 @@ There are many type of Activation Functions that can be choosed to apply on your
   </em>
   </ul>
   
+  Interview Questions (We will not talk about optimizer questions here)
   
+  1. Why dont you use MSE in Logistic Regression ? [Answer](https://www.quora.com/What-are-the-main-reasons-not-to-use-MSE-as-a-cost-function-for-Logistic-Regression#:~:text=The%20main%20reason%20not%20to,the%20function%20to%20optimally%20converge.)
+    
+  For more information and better explaination refer this [link](https://www.deeplearning.ai/ai-notes/optimization/)
 
-  
+  #### References 
+  1. Quora
+  2. DeepLearning.ai 
+  3. Analystics Vidhya
+  4. Towards Data Science  
   
 ## Day 3 
    Code - For multi Layered Perceptron
