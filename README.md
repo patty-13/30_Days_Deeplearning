@@ -137,13 +137,11 @@ There are many type of Activation Functions that can be choosed to apply on your
   4. Towards Data Science  
   
 ## Day 3 
-   Code - For multi Layered Perceptron
-   
+  Added code for Multi Layered Perceptron using Tensorflow(keras)
    
 ## Day4
   Convolutional Neural Network  
-   Theory - .... 
-   
+  
 
 
 
