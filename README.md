@@ -138,7 +138,7 @@ There are many type of Activation Functions that can be choosed to apply on your
   
 ## Day 3 
   Added code for Multi Layered Perceptron using Tensorflow(keras)
-   
+  Refer this [link](https://github.com/patty-13/30_Days_Deeplearning/blob/main/Codes/MLP/Multi_Layered_Preceptron.ipynb)
 ## Day4
   Convolutional Neural Network  
   
