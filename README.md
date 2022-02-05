@@ -142,6 +142,10 @@ There are many type of Activation Functions that can be choosed to apply on your
 ## Day4
   Convolutional Neural Network  
   
+  
+#### Optimization 
+
+[Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
 
 
 
