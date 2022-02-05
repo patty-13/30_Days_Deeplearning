@@ -146,6 +146,7 @@ There are many type of Activation Functions that can be choosed to apply on your
 #### Optimization 
 
 [Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
+[Adam](https://arxiv.org/pdf/1412.6980.pdf)
 
 
 
