@@ -141,7 +141,7 @@ There are many type of Activation Functions that can be choosed to apply on your
   Refer this [link](https://github.com/patty-13/30_Days_Deeplearning/blob/main/Codes/MLP/Multi_Layered_Preceptron.ipynb)
 ## Day4
   Convolutional Neural Network  
-  
+  [Edge Detector](https://en.wikipedia.org/wiki/Sobel_operator)
   
 #### Optimization 
 
