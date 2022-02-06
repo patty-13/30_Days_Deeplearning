@@ -55,9 +55,13 @@ There are many type of Activation Functions that can be choosed to apply on your
   4. Wikipedia
   5. Neural networks: activation functions Jeremy Jordan
   6. Analytics India Mag
-  
 ## Day 2 
-  For Multi Layered Perceptron<br>
+  ### BackPropogation
+   
+  ## Pratyush add stuff
+
+## Day 3 
+  Optimization for Multi Layered Perceptron<br>
   <p>Neural Network uses optimizer to minimize the error in the algorithm and the error is actually computed is by using a         Loss Function which helps in identify how good or bad the model is performing.</p>
 1. Loss Function <br> 
     Loss functions measure how far an estimated value is from its true value. We need to know how closely we are estimating our values, this can be done using a loss function that gives us a measure of it. Ideally, we aim to decrease the loss and reach close to our true values.
@@ -136,13 +140,61 @@ There are many type of Activation Functions that can be choosed to apply on your
   3. Analystics Vidhya
   4. Towards Data Science  
   
-## Day 3 
+## Day 4 
   Added code for Multi Layered Perceptron using Tensorflow(keras)
   Refer this [link](https://github.com/patty-13/30_Days_Deeplearning/blob/main/Codes/MLP/Multi_Layered_Preceptron.ipynb)
-## Day4
-  Convolutional Neural Network  
-  [Edge Detector](https://en.wikipedia.org/wiki/Sobel_operator)
+  
+## Day 5
+  ### Convolutional Neural Network  
+  
+  CNN (Convolutional Neural Network or ConvNet) is a type of feed-forward artificial network where the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex. 
+  
+   Refer this [link](http://www.cns.nyu.edu/~david/courses/perception/lecturenotes/what-where/what-where.html)
+   
+   The best example is to understand how sobel operator detects lines refer this [link](https://en.wikipedia.org/wiki/Sobel_operator) for sobel line detection
+   
+   We have a kernel that convolves over the image and then gives you a output and on the basis of that output we make decision. In convolutions, we have element wise multiplications and summation over them to get an element for a new matrix. The scope of the multiplications is determined by the size of the filter.
+   
+   Such distinguished filters are applied to get different features of images for visual tasks in CNN. In convolutions we involve element wise multiplications and additions.
+   
+   In the sobel opertor we find out that the resultant matrix is smaller than the input matrix to keep them of simillar size we use a term called padding. 
+   
+   In formulas you can have 
+   
+   Input matrix - (6,6) 
+   Sobel Kernel - (3,3) 
+   After convolution we get
+   Output Matrix  - Input Matrix *(conv)* Sobel Kernel => (4,4)
+   
+   The formula for the dimensions of the output matrix is - (n-k+1, n-k+1): n - size of input matrix, k – size of filter matrix (Considering stride = 1)
+   
+   As we saw that output matrix is smaller than the input matrix so we add padding around the input matrix. Refer this [link](https://deepai.org/machine-learning-glossary-and-terms/padding#:~:text=Padding%20is%20a%20term%20relevant,will%20be%20of%20value%20zero.)
+   
+   With padding of size p, we will have final matrix of size (n-k+2p+1, n-k+2p+1)
+   
+   The Example mentioned above works with Grayscale image for getting a more intutive understanding for RGB assume that there are three types of images kept over each other with different pixel values for different colours. It can be assumed more of a 3D cube with 3 different matrix with pixel values of different colour. 
+   This [link](https://cs231n.github.io/convolutional-networks/#pool) will help to understand it better.
+   
+## Day 6 
+  Learning Hyper Parameters for CNN
+  
+  In MLP we learn the weights and baises using backpropogation but in CNN we learn kernel matrices using backpropogation. 
+    
+ 
   [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)
+  ![Alex Net](https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg)
+  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+  [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)
+  [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)
+  [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)
+ 
+
+## 
+  [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)
+  [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)
+  
+  [Inception Network]( https://arxiv.org/pdf/1512.00567.pdf)
+  [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)
   
 #### Optimization 
 
