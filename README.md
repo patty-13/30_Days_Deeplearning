@@ -175,10 +175,32 @@ There are many type of Activation Functions that can be choosed to apply on your
    The Example mentioned above works with Grayscale image for getting a more intutive understanding for RGB assume that there are three types of images kept over each other with different pixel values for different colours. It can be assumed more of a 3D cube with 3 different matrix with pixel values of different colour. 
    This [link](https://cs231n.github.io/convolutional-networks/#pool) will help to understand it better.
    
+   Interview Questions 
+   ### pratyush Update
+   
+   References
+   ### Pratyush Update
+   
 ## Day 6 
   Learning Hyper Parameters for CNN
   
   In MLP we learn the weights and baises using backpropogation but in CNN we learn kernel matrices using backpropogation. 
+  At each convolution layer we will have multiple kernels to learn different features of the images. For each kernel we will have a 2D array output, multiple kernels result in multiple output arrays (padded to get input array size), so at the layer we will get an output array of size n x n x m, where m is number of kernels (m is a hyper parameter). 
+  
+  For every output element obtain from the filters we appy activation function. 
+  
+  To put it simply we pad, convolve and activate to transform input array in convolution layer. 
+  For MLP we train weights, for CNN we learn kernel. 
+  
+  Then we have a concept of pooling refer this [link](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/) to get a better understanding. 
+  
+  Main point of pooling is to introduce concept of Local invariance, Scale invariance and Rotational invariance.
+  But, sometimes invariance is not desirable. We can also have a goal of equivariance, where a small change in input array should also reciprocate a small change in output (invariance: a change in input image does not show changes in output array)
+   
+   Refer to this [link](https://www.slideshare.net/kuwajima/cnnbp) to get a better understanding for how to optimize CNN models. 
+   
+  ## Day 7
+  Famous CNN models 
     
  
   [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)
