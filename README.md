@@ -142,6 +142,7 @@ There are many type of Activation Functions that can be choosed to apply on your
 ## Day4
   Convolutional Neural Network  
   [Edge Detector](https://en.wikipedia.org/wiki/Sobel_operator)
+  [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)
   
 #### Optimization 
 
