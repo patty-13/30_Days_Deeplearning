@@ -176,7 +176,22 @@ There are many type of Activation Functions that can be choosed to apply on your
    This [link](https://cs231n.github.io/convolutional-networks/#pool) will help to understand it better.
    
    Interview Questions 
-   ### pratyush Update
+   ### 
+1. Why is CNN preferred over ANN for image data?
+2. What is the importance of the RELU activation function in CNN?
+3. Explain the use of the pooling layer in CNN.
+4. Explain the difference between valid padding and the same padding in CNN.
+5. Explain the role of a fully connected (FC) layer in CNN.
+6. What is the importance of parameter sharing 
+7. Explain the different types of Pooling. 
+8. What is the use of the convolution layer in CNN?
+9. What are the advantages of using CNN over DNN?
+10. How would you visualise features of CNN in an image classification task?
+11. What do you understand by shared weights in CNN?
+12. Explain the process of flattening?
+13. Can CNN be used to perform Dimensionality Reduction? If yes, how?
+14. Define the term sparsity of connections in CNN.
+15. List the hyperparameters of a pooling layer in CNN
    
    References
    ### Pratyush Update
