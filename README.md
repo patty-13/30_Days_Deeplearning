@@ -176,7 +176,7 @@ There are many type of Activation Functions that can be choosed to apply on your
    This [link](https://cs231n.github.io/convolutional-networks/#pool) will help to understand it better.
    
    Interview Questions 
-   ### 
+   ### some of the common questions realtead to CNN.
 1. Why is CNN preferred over ANN for image data?
 2. What is the importance of the RELU activation function in CNN?
 3. Explain the use of the pooling layer in CNN.
@@ -194,7 +194,10 @@ There are many type of Activation Functions that can be choosed to apply on your
 15. List the hyperparameters of a pooling layer in CNN
    
    References
-   ### Pratyush Update
+   1. Analytics vidhaya
+   2. blog insiad
+   3. wikipedia
+   4. deepai
    
 ## Day 6 
   Learning Hyper Parameters for CNN
