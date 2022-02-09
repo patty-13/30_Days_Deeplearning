@@ -242,7 +242,8 @@ There are many type of Activation Functions that can be choosed to apply on your
 [Adam](https://arxiv.org/pdf/1412.6980.pdf)
 
 
-
+## DAY 8
+## DAY 9
 
 
 
