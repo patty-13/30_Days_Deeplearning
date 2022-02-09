@@ -227,7 +227,7 @@ There are many type of Activation Functions that can be choosed to apply on your
   [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)
   [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)
   [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)
-  [Unroloing Tecnique for CNN](https://arxiv.org/pdf/1912.10557.pdf)
+  [Algorithm unrolling](https://arxiv.org/pdf/1912.10557.pdf)
 
 ## 
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)
