@@ -220,7 +220,7 @@ There are many type of Activation Functions that can be choosed to apply on your
   ## Day 7
   Famous CNN models 
     
- 
+  [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)
   [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)
   ![Alex Net](https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg)
   [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
