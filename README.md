@@ -236,6 +236,7 @@ There are many type of Activation Functions that can be choosed to apply on your
   [Inception Network]( https://arxiv.org/pdf/1512.00567.pdf)
   [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)
   [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)
+  [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
   
 #### Optimization 
 
