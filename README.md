@@ -245,7 +245,7 @@ There are many type of Activation Functions that can be choosed to apply on your
 
 
 ## DAY 8
-RNN research paper -  [here](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf)
+RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.](https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)
 ## DAY 9
 
 
