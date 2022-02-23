@@ -249,7 +249,7 @@ RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pd
 LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()
 GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper](https://arxiv.org/pdf/1409.1259.pdf)
 Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)
-
+Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)
 ## DAY 9
 
 
