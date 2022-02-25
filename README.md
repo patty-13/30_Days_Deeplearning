@@ -243,8 +243,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day 7
   IMPLEMENTATION OF CNN
   
-  1. Step by Step implementation of CNN.
-  2. keras implementation of CNN.
+  1. Step by Step implementation of CNN. (NOTE: I WILL BE ADDING IT TODAY)
+  2. keras implementation of CNN.  (NOTE: I WILL BE ADDING IT TODAY)
   
   ## Day-8
   FAMOUS CNN ARCHITECTURES
@@ -335,29 +335,74 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
       From the past few CNNs, we have seen nothing but an increasing number of layers in the design and achieving better                 performance. But “with the network depth increasing, accuracy gets saturated (which might be unsurprising) and then degrades       rapidly.” The folks from Microsoft Research addressed this problem with ResNet — using skip connections (a.k.a. shortcut           connections, residuals) while building deeper models.
       ResNet is one of the early adopters of batch normalisation (the batch norm paper authored by Ioffe and Szegedy was submitted       to ICML in 2015). Shown above is ResNet-50, with 26M parameters.<br>
      IMPLEMENTATION CODE: [ResNet-50](https://github.com/keras-team/keras-applications/blob/master/keras_applications/resnet_common.py)<br>
-     <ul>
+      <ul>
          <li>Popularised skip connections (they weren’t the first to use skip connections)</li>
          <li>Designing even deeper CNNs (up to 152 layers) without compromising the model’s generalisation power</li>
          <li>Among the first to use batch normalisation</li>
          <li>max pooling</li>
          <li>trainable weights</li>
-     </ul>
+       </ul>
      Paper : https://arxiv.org/pdf/1512.03385.pdf<br>
      Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. Microsoft.
     
     
-  8. Xception
+  8. Xception (2016)
+     [Xception-ppr](https://arxiv.org/abs/1610.02357)
+    ![image](https://user-images.githubusercontent.com/56751154/155662383-327a351a-43e5-4abb-835d-2489cb90e2d1.png)<br>
+      Xception is an adaptation from Inception, where the Inception modules have been replaced with depthwise separable                 convolutions. It has also roughly the same number of parameters as Inception-v1 (23M). Introduced CNN based entirely on           depthwise separable convolution layers.<br>
+      IMPLEMENTATION OF CODE: [Xception-Code](https://github.com/keras-team/keras-applications/blob/master/keras_applications/xception.py)
+      <ul>
+        <li>Firstly, cross-channel (or cross-feature map) correlations are captured by 1×1 convolutions</li>
+        <li>Consequently, spatial correlations within each channel are captured via the regular 3×3 or 5×5 convolutions</li>
+        <li>Taking this idea to an extreme means performing 1×1 to every channel, then performing a 3×3 to each output. This is identical to replacing the Inception module with depthwise separable convolutions.</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1610.02357
+    Authors: François Chollet. Google
   
   ## Day-11
   FAMOUS CNN ARCHITECTURE conti..
   
   8. Inception v-4
-  9. Inception-ResNets
-  10. ResNeXt-50
+     [Inception v-4 ppr](https://arxiv.org/abs/1602.07261)<br><br>
+     ![image](https://user-images.githubusercontent.com/56751154/155664328-d94411df-08ed-41f3-bbe1-dbf538d7d26b.png)<br>
+     The folks from Google strike again with Inception-v4, 43M parameters. Again, this is an improvement from Inception-v3. The        main difference is the Stem group and some minor changes in the Inception-C module. The authors also “made uniform choices        for the Inception blocks for each grid size.” They also mentioned that having “residual connections leads to dramatically          improved training speed.”<br>
+     IMPLEMENTATION CODE: [in-v-4 code](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v4.py)
+     ul>
+        <li>Change in Stem module</li>
+        <li>Adding more Inception modules.</li>
+        <li>Uniform choices of Inception-v3 modules, meaning using the same number of filters for every module.</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1602.07261
+    Authors: Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Google
+
+  9. Inception-ResNets(2016)
+     [I-ResNets ppr](https://arxiv.org/abs/1602.07261)
+     ![image](https://user-images.githubusercontent.com/56751154/155664723-ddf7eba1-9d45-493e-846a-2a039517d4f0.png)<br>
+     In the same paper as Inception-v4, the same authors also introduced Inception-ResNets — a family of Inception-ResNet-v1 and Inception-ResNet-v2. The latter member of the family has 56M parameters.<br>
+     IMPLEMENTATION OF CODE: [I-ResNet](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_resnet_v2.py)<br>
+     <ul>
+        <li>Converting Inception modules to Residual Inception blocks</li>
+        <li>Adding more Inception modules.</li>
+        <li>Adding a new type of Inception module (Inception-A) after the Stem module.</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1602.07261
+    Authors: Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Google
+
+  11. ResNeXt-50 (2017)
+      [ResNeXt-50](https://arxiv.org/abs/1611.05431)<br><br>
+      ![image](https://user-images.githubusercontent.com/56751154/155665075-6d56551e-358f-4c7f-9852-b2e348c20b7d.png)<br>
+      If you’re thinking about ResNets, yes, they are related. ResNeXt-50 has 25M parameters (ResNet-50 has 25.5M). What’s different about ResNeXts is the adding of parallel towers/branches/paths within each module, as seen above indicated by ‘total 32 towers. Scaling up the number of parallel towers (“cardinality”) within a module (well I mean this has already been explored by the Inception network, except that these towers are added here)<br>
+    Paper : https://arxiv.org/abs/1611.05431<br>
+    Authors: Min Lin, Qiang Chen, Shuicheng Yan. National University of Singapore
+
+      
   
   ## Day-12
   ### RNN
-  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.] (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
+  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.]            (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
 LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
 GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper](https://arxiv.org/pdf/1409.1259.pdf)<br>
 Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
@@ -405,7 +450,6 @@ Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoenco
 ## 
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
-  
   [Inception Network](https://arxiv.org/abs/1512.00567)<br>
   [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
   [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)<br>
