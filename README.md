@@ -248,8 +248,35 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   
   ## Day-8
   FAMOUS CNN ARCHITECTURES
-  1. LeNet-5
-  2. AlexNet
+  1. LeNet-5 (1998)
+     [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br>
+     ![image](https://user-images.githubusercontent.com/56751154/155654094-fd2f7854-e587-4136-a57c-9d4c539d1fd1.png)<br>
+     LeNet-5 is one of the simplest and the first architecture. This architecutre has become the standard 'template': stacking<br>
+     convolutions with activation funciton, and pooling layers, and ending the network with one or more fully-connected layers.
+     It has:
+     <ul>
+        <li>2 convolutional layer</li>
+        <li>3 fully connected layer</li>
+        <li>The average-pooling layer</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : http://yann.lecun.com/exdb/publis/index.html#lecun-98
+    Authors: Yann leCun, Leon Bottou, Yoshua Bengio, and Patrick Haffner
+ 
+
+  2. AlexNet (2012)
+     [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br>
+     ![image](https://user-images.githubusercontent.com/56751154/155654642-29f84d60-399d-47e7-9efc-c578d412055a.png)<br>
+     AlexNet is the improved version of LeNet-5, with 60M parameters. This model was the first to use ReLU as activation function.      and Dropouts. So basically AlexNet just stacked a few more layers on LeNet-5.
+     it has:
+     <ul>
+        <li>5 convolutional layer</li>
+        <li>3 fully connected layer</li>
+        <li>The average-pooling layer</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+    Authors: Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton. University of Toronto, Canada.
   
   ## Day-9
   FANOUS CNN ARCHITECTURE
