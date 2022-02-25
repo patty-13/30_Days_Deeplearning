@@ -284,7 +284,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   3. VGG-16(2014)
      [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155656375-630e2bca-dfd9-478f-9cf3-c5ad679622f3.png)<br>
-     The main point here is that CNN are getting deeper and deeper. This is because the most straightforward way is to increase        the number of layer or size. Including 13 convolutional and 3 fully connected layer, ReLU is also used from AlexNet.So In          this:
+     The main point here is that CNN are getting deeper and deeper. This is because the most straightforward way is to increase        the number of layer or size. Including 13 convolutional and 3 fully connected layer, ReLU is also used from AlexNet.So In          this:<br><br>
      IMPLEMENTATION OF VGG-16: [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)<br>
      <ul>
         <li>13 convolutional layer</li>
@@ -299,7 +299,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   4. Inception-v1(2014)
      [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155657671-2147ce4f-775c-43b8-befe-83fa58cc150d.png)<br>
-     This is a 22-layer architecture with 5M parameters. The Network in Network is implemented via Inception modules. The design        of the module is a product of research on approximating sparse structure. So in this the networks are build using modules/blocks instead of stacking convolutional layers.<br>
+     This is a 22-layer architecture with 5M parameters. The Network in Network is implemented via Inception modules. The design        of the module is a product of research on approximating sparse structure. So in this the networks are build using modules/blocks instead of stacking convolutional layers.<br><br>
      IMPLEMENTATION OF INCEPTION: [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
      <ul>
         <li>parallel towers of convolutional with different filters, followed by concentration, captures different features 1x1,            3x3 and 5x5</li>
@@ -315,7 +315,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
      [Inception_Network](https://arxiv.org/abs/1512.00567)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155659519-e14677fa-6357-4411-8a7f-68282ebac9b2.png)<br>
       Inception-v3 is a successor to Inception-v1, with 24M parameters. This model is among first to use batch normalization.
-      <br> IMPLEMENTATION CODE: [Inception-v3](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v1.py)
+      <br><br> IMPLEMENTATION CODE: [Inception-v3](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v1.py)<br>
       <ul>
         <li>Factorising n×n convolutions into asymmetric convolutions: 1×n and n×1 convolutions</li>
         <li>Factorise 5×5 convolution to two 3×3 convolution operations</li>
@@ -333,7 +333,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
      ![image](https://user-images.githubusercontent.com/56751154/155660472-b2d23ff8-96e0-42fd-8a07-e6c3927ea31c.png)<br>
      ![image](https://user-images.githubusercontent.com/56751154/155660601-794875ad-5faa-4fb5-8d44-7c9cdfc30dd9.png)<br>
       From the past few CNNs, we have seen nothing but an increasing number of layers in the design and achieving better                 performance. But “with the network depth increasing, accuracy gets saturated (which might be unsurprising) and then degrades       rapidly.” The folks from Microsoft Research addressed this problem with ResNet — using skip connections (a.k.a. shortcut           connections, residuals) while building deeper models.
-      ResNet is one of the early adopters of batch normalisation (the batch norm paper authored by Ioffe and Szegedy was submitted       to ICML in 2015). Shown above is ResNet-50, with 26M parameters.<br>
+      ResNet is one of the early adopters of batch normalisation (the batch norm paper authored by Ioffe and Szegedy was submitted       to ICML in 2015). Shown above is ResNet-50, with 26M parameters.<br><br>
      IMPLEMENTATION CODE: [ResNet-50](https://github.com/keras-team/keras-applications/blob/master/keras_applications/resnet_common.py)<br>
       <ul>
          <li>Popularised skip connections (they weren’t the first to use skip connections)</li>
@@ -349,8 +349,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   8. Xception (2016)
      [Xception-ppr](https://arxiv.org/abs/1610.02357)
     ![image](https://user-images.githubusercontent.com/56751154/155662383-327a351a-43e5-4abb-835d-2489cb90e2d1.png)<br>
-      Xception is an adaptation from Inception, where the Inception modules have been replaced with depthwise separable                 convolutions. It has also roughly the same number of parameters as Inception-v1 (23M). Introduced CNN based entirely on           depthwise separable convolution layers.<br>
-      IMPLEMENTATION OF CODE: [Xception-Code](https://github.com/keras-team/keras-applications/blob/master/keras_applications/xception.py)
+      Xception is an adaptation from Inception, where the Inception modules have been replaced with depthwise separable                 convolutions. It has also roughly the same number of parameters as Inception-v1 (23M). Introduced CNN based entirely on           depthwise separable convolution layers.<br><br>
+      IMPLEMENTATION OF CODE: [Xception-Code](https://github.com/keras-team/keras-applications/blob/master/keras_applications/xception.py)<br>
       <ul>
         <li>Firstly, cross-channel (or cross-feature map) correlations are captured by 1×1 convolutions</li>
         <li>Consequently, spatial correlations within each channel are captured via the regular 3×3 or 5×5 convolutions</li>
@@ -366,9 +366,10 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   8. Inception v-4
      [Inception v-4 ppr](https://arxiv.org/abs/1602.07261)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155664328-d94411df-08ed-41f3-bbe1-dbf538d7d26b.png)<br>
-     The folks from Google strike again with Inception-v4, 43M parameters. Again, this is an improvement from Inception-v3. The        main difference is the Stem group and some minor changes in the Inception-C module. The authors also “made uniform choices        for the Inception blocks for each grid size.” They also mentioned that having “residual connections leads to dramatically          improved training speed.”<br>
+     The folks from Google strike again with Inception-v4, 43M parameters. Again, this is an improvement from Inception-v3. The        main difference is the Stem group and some minor changes in the Inception-C module. The authors also “made uniform choices        for the Inception blocks for each grid size.” They also mentioned that having “residual connections leads to dramatically          improved training speed.”<br><br>
      IMPLEMENTATION CODE: [in-v-4 code](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v4.py)
-     ul>
+     <br>
+     <ul>
         <li>Change in Stem module</li>
         <li>Adding more Inception modules.</li>
         <li>Uniform choices of Inception-v3 modules, meaning using the same number of filters for every module.</li>
@@ -380,7 +381,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   9. Inception-ResNets(2016)
      [I-ResNets ppr](https://arxiv.org/abs/1602.07261)
      ![image](https://user-images.githubusercontent.com/56751154/155664723-ddf7eba1-9d45-493e-846a-2a039517d4f0.png)<br>
-     In the same paper as Inception-v4, the same authors also introduced Inception-ResNets — a family of Inception-ResNet-v1 and Inception-ResNet-v2. The latter member of the family has 56M parameters.<br>
+     In the same paper as Inception-v4, the same authors also introduced Inception-ResNets — a family of Inception-ResNet-v1 and Inception-ResNet-v2. The latter member of the family has 56M parameters.<br><br>
      IMPLEMENTATION OF CODE: [I-ResNet](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_resnet_v2.py)<br>
      <ul>
         <li>Converting Inception modules to Residual Inception blocks</li>
@@ -394,19 +395,40 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   11. ResNeXt-50 (2017)
       [ResNeXt-50](https://arxiv.org/abs/1611.05431)<br><br>
       ![image](https://user-images.githubusercontent.com/56751154/155665075-6d56551e-358f-4c7f-9852-b2e348c20b7d.png)<br>
-      If you’re thinking about ResNets, yes, they are related. ResNeXt-50 has 25M parameters (ResNet-50 has 25.5M). What’s different about ResNeXts is the adding of parallel towers/branches/paths within each module, as seen above indicated by ‘total 32 towers. Scaling up the number of parallel towers (“cardinality”) within a module (well I mean this has already been explored by the Inception network, except that these towers are added here)<br>
+      If you’re thinking about ResNets, yes, they are related. ResNeXt-50 has 25M parameters (ResNet-50 has 25.5M). What’s different about ResNeXts is the adding of parallel towers/branches/paths within each module, as seen above indicated by ‘total 32 towers. Scaling up the number of parallel towers (“cardinality”) within a module (well I mean this has already been explored by the Inception network, except that these towers are added here)<br><br>
     Paper : https://arxiv.org/abs/1611.05431<br>
-    Authors: Min Lin, Qiang Chen, Shuicheng Yan. National University of Singapore
+    Authors: Min Lin, Qiang Chen, Shuicheng Yan. National University of Singapore<br>
+#### Important Links
+1. [Algorithm unrolling](https://arxiv.org/pdf/1912.10557.pdf)<br>
+2. [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br>
+3. [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)<br>
+4. [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br>
+5. [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)<br>
+6. [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)<br><br>
+
+#### Optimization 
+
+1. [Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
+2. [Adam](https://arxiv.org/pdf/1412.6980.pdf)
+
+#### Refrences
+1. Medium
+2. wikipedia
 
       
   
   ## Day-12
+  
   ### RNN
-  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.]            (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
-LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
-GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper](https://arxiv.org/pdf/1409.1259.pdf)<br>
-Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
-Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)<br>
+  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.]                          (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
+  LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
+  GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper]    (https://arxiv.org/pdf/1409.1259.pdf)<br>
+ Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
+ Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)<br>
+ 
+  [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
+  [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
+
   ## Day-13
   ## Day-14
   ## Day-15
@@ -429,55 +451,6 @@ Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoenco
   ## Day-30
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)<br>
-  [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br>
-  ![Alex Net](https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg)<br>
-  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br>
-  [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)<br>
-  [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)<br>
-  [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)<br>
-  [Algorithm unrolling](https://arxiv.org/pdf/1912.10557.pdf)<br>
-
-## 
-  [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
-  [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
-  [Inception Network](https://arxiv.org/abs/1512.00567)<br>
-  [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
-  [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)<br>
-  [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)<br>
-  
-#### Optimization 
-
-[Batch Normalization](https://arxiv.org/pdf/1502.03167v3.pdf)
-[Adam](https://arxiv.org/pdf/1412.6980.pdf)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### About  
 This repository is to help people learn Deep Learning in 30 days. 
