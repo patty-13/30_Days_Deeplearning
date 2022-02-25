@@ -57,9 +57,30 @@ There are many type of Activation Functions that can be choosed to apply on your
   6. Analytics India Mag
 ## Day 2 
   ### BackPropogation
-   
-  ## Pratyush add stuff
-
+  After Forward Propagation and comparision with the results, to update the parameters values propagates in the backward direction, simply to update the parameters the backward movement is called BackPropagation. So it is an algorithm used to   calculate derivatives quickely.<br>
+ ### Working of BackPropagation
+ So, the main three layers are:
+ 1. input layer
+ 2. hidden layer
+ 3. output layer<br>
+ ![image](https://user-images.githubusercontent.com/56751154/155643429-4d035c79-9da3-4767-a31c-6c9aace1aafa.png)<br>
+ The image summarizes the functioning of the backpropagation approach.<br>
+ Forward propagation:
+ 1. Input layer receives inputs or x.
+ 2. input is modeled using weights w.
+ 3. Each hidden layer calculates z = w.x + b, then sends it through acitvation. A(Z).
+ 4. In output layer the difference between acutal value and the value obtained is called error.
+ Back Propagation
+ 5. Go back to the hidden layers and adjust the weights so that this error is reduced in future runs.<br>
+ So basically this what happens in equation form
+ ![image](https://user-images.githubusercontent.com/56751154/155645025-a5ee2475-331c-4e56-98f3-51383836831c.png)
+### Forward Prop mathematical equations.
+![image](https://user-images.githubusercontent.com/56751154/155645120-c9f4f4c1-de7d-477e-a40a-2565089c658e.png)
+### Backward Prop mathematical equations.
+  ![image](https://user-images.githubusercontent.com/56751154/155645158-1f114024-374f-4489-8346-68df69ccaf2a.png)<br>
+#### Reference<br>
+https://medium.com/@pdquant/all-the-backpropagation-derivatives-d5275f727f60<br>
+https://www.mygreatlearning.com/blog/backpropagation-algorithm/
 ## Day 3 
   Optimization for Multi Layered Perceptron<br>
   <p>Neural Network uses optimizer to minimize the error in the algorithm and the error is actually computed is by using a         Loss Function which helps in identify how good or bad the model is performing.</p>
@@ -141,6 +162,8 @@ There are many type of Activation Functions that can be choosed to apply on your
   4. Towards Data Science  
   
 ## Day 4 
+  STEP BY STEP IMPLEMENTATION OF MULTILAYERD PRECEPTRON<br>
+  The code encapsulates the knowledge gained from the content learned in day 1,2,3.<br>
   Added code for Multi Layered Perceptron using Tensorflow(keras)
   Refer this [link](https://github.com/patty-13/30_Days_Deeplearning/blob/main/Codes/MLP/Multi_Layered_Preceptron.ipynb)
   
@@ -218,25 +241,91 @@ There are many type of Activation Functions that can be choosed to apply on your
    Refer to this [link](https://www.slideshare.net/kuwajima/cnnbp) to get a better understanding for how to optimize CNN models. 
    
   ## Day 7
-  Famous CNN models 
+  IMPLEMENTATION OF CNN
+  
+  1. Step by Step implementation of CNN.
+  2. keras implementation of CNN.
+  
+  ## Day-8
+  FAMOUS CNN ARCHITECTURES
+  1. LeNet-5
+  2. AlexNet
+  
+  ## Day-9
+  FANOUS CNN ARCHITECTURE
+  
+  3. VGG-16
+  4. Inception-v1
+  5. Inception-v3
+  
+  ## Day-10
+  FAMOUS CNN ARCHITECUTRE
+  
+  6. ResNet-50
+  7. Xception
+  
+  ## Day-11
+  FAMOUS CNN ARCHITECTURE conti..
+  
+  8. Inception v-4
+  9. Inception-ResNets
+  10. ResNeXt-50
+  
+  ## Day-12
+  ### RNN
+  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.] (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
+LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
+GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper](https://arxiv.org/pdf/1409.1259.pdf)<br>
+Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
+Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)<br>
+  ## Day-13
+  ## Day-14
+  ## Day-15
+  
+  ## Day-16
+  
+  ## Day-17
+  ## Day-18
+  ## Day-19
+  ## Day-20
+  ## Day-21
+  ## Day-22
+  ## Day-23
+  ## Day-24
+  ## Day-25
+  ## Day-26
+  ## Day-27
+  ## Day-28
+  ## Day-29
+  ## Day-30
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     
-  [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)
-  [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)
-  ![Alex Net](https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg)
-  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
-  [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)
-  [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)
-  [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)
-  [Algorithm unrolling](https://arxiv.org/pdf/1912.10557.pdf)
+  [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)<br>
+  [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br>
+  ![Alex Net](https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg)<br>
+  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br>
+  [VGG16](https://www.quora.com/What-is-the-VGG-neural-network)<br>
+  [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)<br>
+  [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)<br>
+  [Algorithm unrolling](https://arxiv.org/pdf/1912.10557.pdf)<br>
 
 ## 
-  [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)
-  [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)
+  [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
+  [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
   
-  [Inception Network]( https://arxiv.org/pdf/1512.00567.pdf)
-  [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)
-  [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)
-  [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
+  [Inception Network]( https://arxiv.org/pdf/1512.00567.pdf)<br>
+  [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
+  [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)<br>
+  [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)<br>
   
 #### Optimization 
 
@@ -244,13 +333,9 @@ There are many type of Activation Functions that can be choosed to apply on your
 [Adam](https://arxiv.org/pdf/1412.6980.pdf)
 
 
-## DAY 8
-RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.](https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)
-LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()
-GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper](https://arxiv.org/pdf/1409.1259.pdf)
-Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)
-Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)
-## DAY 9
+
+
+
 
 
 
