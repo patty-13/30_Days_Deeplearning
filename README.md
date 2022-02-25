@@ -428,6 +428,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
  
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
+  Word2VEc - [Blog](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)
 
   ## Day-13
   ## Day-14
