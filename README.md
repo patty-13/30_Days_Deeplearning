@@ -315,6 +315,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
      [Inception_Network](https://arxiv.org/abs/1512.00567)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155659519-e14677fa-6357-4411-8a7f-68282ebac9b2.png)<br>
       Inception-v3 is a successor to Inception-v1, with 24M parameters. This model is among first to use batch normalization.
+      <br> IMPLEMENTATION CODE: [Inception-v3](https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v1.py)
       <ul>
         <li>Factorising n×n convolutions into asymmetric convolutions: 1×n and n×1 convolutions</li>
         <li>Factorise 5×5 convolution to two 3×3 convolution operations</li>
@@ -327,8 +328,25 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day-10
   FAMOUS CNN ARCHITECUTRE
   
-  6. ResNet-50
-  7. Xception
+  6. ResNet-50 (2015)
+     [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br><br>
+     ![image](https://user-images.githubusercontent.com/56751154/155660472-b2d23ff8-96e0-42fd-8a07-e6c3927ea31c.png)<br>
+     ![image](https://user-images.githubusercontent.com/56751154/155660601-794875ad-5faa-4fb5-8d44-7c9cdfc30dd9.png)<br>
+      From the past few CNNs, we have seen nothing but an increasing number of layers in the design and achieving better                 performance. But “with the network depth increasing, accuracy gets saturated (which might be unsurprising) and then degrades       rapidly.” The folks from Microsoft Research addressed this problem with ResNet — using skip connections (a.k.a. shortcut           connections, residuals) while building deeper models.
+      ResNet is one of the early adopters of batch normalisation (the batch norm paper authored by Ioffe and Szegedy was submitted       to ICML in 2015). Shown above is ResNet-50, with 26M parameters.<br>
+     IMPLEMENTATION CODE: [ResNet-50](https://github.com/keras-team/keras-applications/blob/master/keras_applications/resnet_common.py)<br>
+     <ul>
+         <li>Popularised skip connections (they weren’t the first to use skip connections)</li>
+         <li>Designing even deeper CNNs (up to 152 layers) without compromising the model’s generalisation power</li>
+         <li>Among the first to use batch normalisation</li>
+         <li>max pooling</li>
+         <li>trainable weights</li>
+     </ul>
+     Paper : https://arxiv.org/pdf/1512.03385.pdf<br>
+     Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. Microsoft.
+    
+    
+  8. Xception
   
   ## Day-11
   FAMOUS CNN ARCHITECTURE conti..
