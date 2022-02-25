@@ -284,7 +284,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   3. VGG-16(2014)
      [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155656375-630e2bca-dfd9-478f-9cf3-c5ad679622f3.png)<br>
-     The main point here is that CNN are getting deeper and deeper. This is because the most straightforward way is to increase        the number of layer or size. Including 13 convolutional and 3 fully connected layer, ReLU is also used from AlexNet.So In this:
+     The main point here is that CNN are getting deeper and deeper. This is because the most straightforward way is to increase        the number of layer or size. Including 13 convolutional and 3 fully connected layer, ReLU is also used from AlexNet.So In          this:
+     IMPLEMENTATION OF VGG-16: [VGG 16 Keras Implementation](https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py)<br>
      <ul>
         <li>13 convolutional layer</li>
         <li>3 fully connected layer</li>
@@ -293,10 +294,36 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
      </ul>
     Paper : https://arxiv.org/abs/1409.1556
     Authors: Karen Simonyan, Andrew Zisserman. University of Oxford, UK.
-  4. Inception-v1
     
-  5. Inception-v3
-  
+    
+  4. Inception-v1(2014)
+     [Inception Networks](https://arxiv.org/pdf/1512.00567.pdf)<br><br>
+     ![image](https://user-images.githubusercontent.com/56751154/155657671-2147ce4f-775c-43b8-befe-83fa58cc150d.png)<br>
+     This is a 22-layer architecture with 5M parameters. The Network in Network is implemented via Inception modules. The design        of the module is a product of research on approximating sparse structure. So in this the networks are build using modules/blocks instead of stacking convolutional layers.<br>
+     IMPLEMENTATION OF INCEPTION: [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
+     <ul>
+        <li>parallel towers of convolutional with different filters, followed by concentration, captures different features 1x1,            3x3 and 5x5</li>
+        <li>1x1 convolutions are used for dimensionality reduction to remove bottlenects</li>
+        <li>Two auxiliary classifiers to encourage discrimination in the lower stages of the classifier, to increase the gradient signal that gets propagated back, and provide additional regualriation </li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1409.4842
+    Authors: Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich. Google, University of Michigan, University of North Carolina.
+
+    
+  5. Inception-v3 (2015)
+     [Inception_Network](https://arxiv.org/abs/1512.00567)<br><br>
+     ![image](https://user-images.githubusercontent.com/56751154/155659519-e14677fa-6357-4411-8a7f-68282ebac9b2.png)<br>
+      Inception-v3 is a successor to Inception-v1, with 24M parameters. This model is among first to use batch normalization.
+      <ul>
+        <li>Factorising n×n convolutions into asymmetric convolutions: 1×n and n×1 convolutions</li>
+        <li>Factorise 5×5 convolution to two 3×3 convolution operations</li>
+        <li>Replace 7×7 with a series of 3×3 convolutions</li>
+        <li>max pooling</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1512.00567
+    Authors: Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna. Google, University College London
   ## Day-10
   FAMOUS CNN ARCHITECUTRE
   
@@ -361,7 +388,7 @@ Auto Encoders - [Notes](http://ufldl.stanford.edu/tutorial/unsupervised/Autoenco
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
   
-  [Inception Network]( https://arxiv.org/pdf/1512.00567.pdf)<br>
+  [Inception Network](https://arxiv.org/abs/1512.00567)<br>
   [Inception Network Code](https://github.com/keras-team/keras/blob/master/keras/applications/inception_v3.py)<br>
   [Training machines how to read](https://proceedings.neurips.cc/paper/2015/file/afdec7005cc9f14302cd0474fd0f3c96-Paper.pdf)<br>
   [Dropouts](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)<br>
