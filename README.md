@@ -249,7 +249,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day-8
   FAMOUS CNN ARCHITECTURES
   1. LeNet-5 (1998)
-     [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br>
+     [LeNet Architecture](https://www.kaggle.com/blurredmachine/lenet-architecture-a-complete-guide)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155654094-fd2f7854-e587-4136-a57c-9d4c539d1fd1.png)<br>
      LeNet-5 is one of the simplest and the first architecture. This architecutre has become the standard 'template': stacking<br>
      convolutions with activation funciton, and pooling layers, and ending the network with one or more fully-connected layers.
@@ -265,14 +265,14 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
  
 
   2. AlexNet (2012)
-     [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br>
+     [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)<br><br>
      ![image](https://user-images.githubusercontent.com/56751154/155654642-29f84d60-399d-47e7-9efc-c578d412055a.png)<br>
      AlexNet is the improved version of LeNet-5, with 60M parameters. This model was the first to use ReLU as activation function.      and Dropouts. So basically AlexNet just stacked a few more layers on LeNet-5.
      it has:
      <ul>
         <li>5 convolutional layer</li>
         <li>3 fully connected layer</li>
-        <li>The average-pooling layer</li>
+        <li>The max-pooling layer</li>
         <li>trainable weights</li>
      </ul>
     Paper : https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
@@ -281,8 +281,20 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day-9
   FANOUS CNN ARCHITECTURE
   
-  3. VGG-16
+  3. VGG-16(2014)
+     [VGG 16 - ppr](https://arxiv.org/pdf/1409.1556.pdf)<br><br>
+     ![image](https://user-images.githubusercontent.com/56751154/155656375-630e2bca-dfd9-478f-9cf3-c5ad679622f3.png)<br>
+     The main point here is that CNN are getting deeper and deeper. This is because the most straightforward way is to increase        the number of layer or size. Including 13 convolutional and 3 fully connected layer, ReLU is also used from AlexNet.So In this:
+     <ul>
+        <li>13 convolutional layer</li>
+        <li>3 fully connected layer</li>
+        <li>The max-pooling layer</li>
+        <li>trainable weights</li>
+     </ul>
+    Paper : https://arxiv.org/abs/1409.1556
+    Authors: Karen Simonyan, Andrew Zisserman. University of Oxford, UK.
   4. Inception-v1
+    
   5. Inception-v3
   
   ## Day-10
