@@ -448,9 +448,9 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   Image Captioning - [Blog](https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8)
   
   
-  English to French
+  **English to French
   Data Set - [Website](http://www.manythings.org/anki/)
-  Character Level Model - [Blog](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html)
+  Character Level Model - [Blog](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html)(Code)
   
   ## Day-13
   ## Day-14
