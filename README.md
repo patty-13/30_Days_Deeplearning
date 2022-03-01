@@ -433,8 +433,17 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   Sequence to Sequnec Learning - [Paper](https://arxiv.org/pdf/1409.3215.pdf) - Simple LSTM 
   Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation - [Paper](https://arxiv.org/pdf/1406.1078.pdf) Lstm with 2 inputs 
   
-    Applications -
-    Translate - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
+  Applications
+  
+  Translate - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
+  Email Auto Reply - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
+  Code Errors - [Blog](https://medium.com/@martin.monperrus/sequence-to-sequence-learning-program-repair-e39dc5c0119b)
+  Image Captioning - [Blog](https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8)
+  
+  English to French
+  Data Set - [Website](http://www.manythings.org/anki/)
+  Character Level Model - [Blog](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html)
+  
   ## Day-13
   ## Day-14
   ## Day-15
