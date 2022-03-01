@@ -429,9 +429,12 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
   Word2VEc - [Blog](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)
-  Deep Visual-Semantic Alignments - [Paper](https://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
-  Sequence to Sequnec Learning - [Paper](https://arxiv.org/pdf/1409.3215.pdf)
+  Deep Visual-Semantic Alignments - [Paper](https://cs.stanford.edu/people/karpathy/cvpr2015.pdf) - CNN gives context vector which is used by the RNN 
+  Sequence to Sequnec Learning - [Paper](https://arxiv.org/pdf/1409.3215.pdf) - Simple LSTM 
+  Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation - [Paper](https://arxiv.org/pdf/1406.1078.pdf) Lstm with 2 inputs 
   
+    Applications -
+    Translate - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
   ## Day-13
   ## Day-14
   ## Day-15
