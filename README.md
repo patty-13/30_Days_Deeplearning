@@ -420,7 +420,7 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day-12
   
   ### RNN
-  RNN research paper -  Here - [1.](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2.]                          (https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
+  RNN research paper -  Here - [1](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2](https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
   LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
   GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper]    (https://arxiv.org/pdf/1409.1259.pdf)<br>
  Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
@@ -428,17 +428,25 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
  
   [Resnets Resudial Networks](https://arxiv.org/pdf/1512.03385.pdf)<br>
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
+  
   Word2VEc - [Blog](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)
+  
   Deep Visual-Semantic Alignments - [Paper](https://cs.stanford.edu/people/karpathy/cvpr2015.pdf) - CNN gives context vector which is used by the RNN 
+  
   Sequence to Sequnec Learning - [Paper](https://arxiv.org/pdf/1409.3215.pdf) - Simple LSTM 
+  
   Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation - [Paper](https://arxiv.org/pdf/1406.1078.pdf) Lstm with 2 inputs 
   
   Applications
   
   Translate - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
+  
   Email Auto Reply - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
+  
   Code Errors - [Blog](https://medium.com/@martin.monperrus/sequence-to-sequence-learning-program-repair-e39dc5c0119b)
+  
   Image Captioning - [Blog](https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8)
+  
   
   English to French
   Data Set - [Website](http://www.manythings.org/anki/)
