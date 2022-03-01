@@ -430,6 +430,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   [ResNet Code](https://github.com/keras-team/keras/blob/master/keras/applications/resnet.py)<br>
   Word2VEc - [Blog](https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/)
   Deep Visual-Semantic Alignments - [Paper](https://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
+  Sequence to Sequnec Learning - [Paper](https://arxiv.org/pdf/1409.3215.pdf)
+  
   ## Day-13
   ## Day-14
   ## Day-15
