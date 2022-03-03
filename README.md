@@ -437,6 +437,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   
   Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation - [Paper](https://arxiv.org/pdf/1406.1078.pdf) Lstm with 2 inputs 
   
+  [CODE](https://github.com/farizrahman4u/seq2seq/blob/master/seq2seq/models.py)
+  
   Applications
   
   Translate - [Blog](https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html)
