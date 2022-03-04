@@ -460,7 +460,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   
   Attention Based Models - [Paper](https://arxiv.org/pdf/1508.04025.pdf) , [Code](https://github.com/facebookresearch/fairseq)
   Transformers - [Blog](http://jalammar.github.io/illustrated-transformer/)
-  Decoding time steps for transformers - ![](http://jalammar.github.io/images/t/transformer_decoding_1.gif) , ![](http://jalammar.github.io/images/t/transformer_decoding_2.gif)
+  Decoding time steps for transformers - 
+  ![](http://jalammar.github.io/images/t/transformer_decoding_1.gif) | ![](http://jalammar.github.io/images/t/transformer_decoding_2.gif)
   
   ### Attention is all you need - [Paper](https://arxiv.org/abs/1706.03762)
   
