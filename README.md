@@ -464,6 +464,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ![1](http://jalammar.github.io/images/t/transformer_decoding_1.gif) | [here for second gif](http://jalammar.github.io/images/t/transformer_decoding_2.gif)
   
   ### Attention is all you need - [Paper](https://arxiv.org/abs/1706.03762)
+  ### IMPLEMENTATION OF BERT FOR TRANSLATION
+  BERT implementation code [github repo](https://github.com/patty-13/Neural-Machine-translation-bert-)
   
   ## Day-14
   ## Day-15
