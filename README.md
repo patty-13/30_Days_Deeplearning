@@ -468,6 +468,9 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ### IMPLEMENTATION OF BERT FOR TRANSLATION
   BERT implementation code [github repo](https://github.com/patty-13/Neural-Machine-translation-bert-)
   
+  Object Detection - Yolov3 - [Main Blog](https://pjreddie.com/darknet/yolo/) , [Working](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
+  
+  
   ## Day-14
   ## Day-15
   
