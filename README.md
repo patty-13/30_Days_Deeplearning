@@ -458,8 +458,10 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   
   ## Day-13
   
-  Attention Based Models - [Paper](https://arxiv.org/pdf/1508.04025.pdf) , [Code](https://github.com/facebookresearch/fairseq)
+  Attention Based Models - [Paper1](https://arxiv.org/pdf/1409.0473.pdf) [Paper2](https://arxiv.org/pdf/1508.04025.pdf) , [Code](https://github.com/facebookresearch/fairseq)
+  
   Transformers - [Blog](http://jalammar.github.io/illustrated-transformer/)
+  
   Decoding time steps for transformers - 
   ![1](http://jalammar.github.io/images/t/transformer_decoding_1.gif) | [here for second gif](http://jalammar.github.io/images/t/transformer_decoding_2.gif)
   
