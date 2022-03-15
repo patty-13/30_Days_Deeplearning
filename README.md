@@ -420,7 +420,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   ## Day-12
   
   ### RNN
-  RNN research paper -  Here - [1](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2](https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)<br>
+  RNN research paper -  Here - [1](https://cseweb.ucsd.edu/~gary/258/jordan-tr.pdf),[2](https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf)
+  -[Blog]( http://karpathy.github.io/2015/05/21/rnn-effectiveness/) <br>
   LSTM - [blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) , [Research Paper]()<br>
   GRU - [blog](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) , [Research Paper]    (https://arxiv.org/pdf/1409.1259.pdf)<br>
  Progress in RNN - [Slides](https://www.slideshare.net/hytae/recent-progress-in-rnn-and-nlp-63762080)<br>
