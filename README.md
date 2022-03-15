@@ -473,6 +473,8 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   Object Detection - Yolov3 - [Main Blog](https://pjreddie.com/darknet/yolo/) , [Working](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
   
   
+  GANS https://deepgenerativemodels.github.io/ 
+  
   ## Day-14
   ## Day-15
   
