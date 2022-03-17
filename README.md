@@ -476,13 +476,14 @@ https://www.mygreatlearning.com/blog/backpropagation-algorithm/
   
   GANS - [Some theory](https://deepgenerativemodels.github.io/) , [Applications](https://medium.com/@jonathan_hui/gan-some-cool-applications-of-gans-4c9ecca35900)
        - [GAN Hacks](https://github.com/soumith/ganhacks),  [Gans In Keras](https://github.com/eriklindernoren/Keras-GAN) 
-  
+
   ## Day-14
   ## Day-15
   
   ## Day-16
   
-  ## Day-17
+  ## Day-17 
+
   ## Day-18
   
   ## Day-19
